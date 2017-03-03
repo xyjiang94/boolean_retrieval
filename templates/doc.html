@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>{{ movie['title']|e }}</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+
+  </head>
+
+  <body>
+
+  <div class="main">
+    <div class = "value-props">
+    <h1>{{ movie['title']|e }}</h1>
+
+    {% for key, value in movie.iteritems() %}
+      {% if key != "title" %}
+      <div class="prop">
+      <div class = "doc">
+        <h2>{{ key|e }}</h2>
+        <p>
+          {% if value is iterable and value is not string %}
+          <ul>
+            {% for item in value %}
+              <li>{{ item|e }}</li>
+            {% endfor %}
+          </ul>
+          {% else %}
+            {{ value|e }}
+          {% endif %}
+        </p>
+      </div>
+    </div>
+
+      {% endif %}
+    {% endfor %}
+
+  </div>
+</div>
+
+
+<div class="form">
+  <h2>2016 Movie</h2>
+
+    <form action="{{ url_for('search_results') }}" name="search" method="post">
+      <input type="text" name="query" placeholder="query"> <br>
+      <input type="text" name="dire" placeholder="director"> <br>
+      <input type="text" name="star" placeholder="starring" > <br>
+      <input type="text" name="loc" placeholder="location"> <br>
+      <button type="submit" value="Search">Submit</button>
+      <!-- <input type="submit" value="Search"> -->
+      </form>
+</div>
+
+  </body>
+
+</html>

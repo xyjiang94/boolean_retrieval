@@ -1,0 +1,188 @@
+html, body {
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 100;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: white
+
+}
+
+p,li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 24px;
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
+}
+
+.contain {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  background-color: rgb(86, 18, 46);
+  margin: 0;
+  padding: 40px;
+}
+
+.contain h2{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: white
+}
+
+/* Main */
+.main {
+  text-align: center;
+  background: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-5/shards.png") no-repeat center center;
+  background-size: cover;
+  margin: 0;
+  padding: 40px;
+}
+
+.main h2 {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 100;
+}
+
+.main a {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 100;
+}
+
+.main p,li {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 24px;
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
+}
+
+/* Navigation */
+.navigation {
+  width: 100%;
+  height: auto;
+  text-align: center;
+
+}
+
+.navigation ul {
+  padding: 0;
+}
+
+.navigation li, a, p {
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(86, 18, 46);
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin: 20px;
+}
+
+
+/*Results*/
+.prop {
+  border: 1px solid #FFF;
+  padding: 40px 0px;
+  margin: 5px 0px;
+}
+
+.value-props {
+  margin: 40px auto;
+  width: 90%;
+}
+
+/*Form*/
+.form {
+  text-align: center;
+  background: url("http://chouquettes-mascara.com/wp-content/uploads/2016/11/pexels-photo-89877.jpeg") no-repeat center center;
+  background-size: cover;
+  margin: 0;
+  padding: 40px;
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: rgba(83, 15, 43, 0.17);
+  width: 50%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 20px;
+  color: #ffffff;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #530f2b;
+  width: 50%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form h2 {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+
+}
+.form button:hover,.form button:active,.form button:focus {
+  rgba(83, 15, 43, 0.39);
+}
+
+.doc p, li{
+  color: #bbb;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 40px;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+
+
+.doc h2 {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 100;
+}
